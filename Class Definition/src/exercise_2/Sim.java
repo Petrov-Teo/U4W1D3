@@ -20,8 +20,10 @@ public class Sim {
 
 
     //METODI
+
+    // Inserimento delle chiamate nell'Array
     public void aggiungiChiamata(Chiamata chiamata) {
-       
+
         if (index == chiamate.length) {
             System.arraycopy(chiamate, 1, chiamate, 0, chiamate.length - 1);
             chiamate[chiamate.length - 1] = chiamata;
@@ -31,9 +33,9 @@ public class Sim {
         }
     }
 
-    /**
-     * Stampa tutte le chiamate effettuate.
-     */
+
+    // Stampa tutte le chiamate effettuate.
+
     public void chiamateEffettuate() {
         System.out.println("Chiamate effettuate:");
         for (int i = 0; i < index; i++) {

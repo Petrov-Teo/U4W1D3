@@ -11,12 +11,14 @@ public class Main {
 
         System.out.println("————————————————————————————————————————————————————————————————————————");
         System.out.println("————————————————————————————————————————————————————————————————————————");
+        System.out.println("sim1 prima dell'inserimento");
         System.out.println(sim1);
         sim1.aggiungiChiamata(chiamata1);
         sim1.aggiungiChiamata(chiamata2);
         sim1.aggiungiChiamata(chiamata3);
         sim1.aggiungiChiamata(chiamata4);
         sim1.aggiungiChiamata(chiamata5);
+        System.out.println("sim1 dopo l'inserimento");
         System.out.println(sim1);
         System.out.println("————————————————————————————————————————————————————————————————————————");
         System.out.println("————————————————————————————————————————————————————————————————————————");
