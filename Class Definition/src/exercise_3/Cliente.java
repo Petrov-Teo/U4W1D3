@@ -5,11 +5,11 @@ import java.util.Random;
 
 public class Cliente {
     //ATTRIBUTI
-    private int codiceCliente;
+    final int codiceCliente;
+    final LocalDate data;
     private String nome;
     private String cognome;
     private String email;
-    private LocalDate data;
 
     //COSTRUTTORI
     public Cliente(String nome, String cognome, String email) {

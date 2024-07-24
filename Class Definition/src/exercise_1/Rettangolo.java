@@ -1,17 +1,20 @@
 package exercise_1;
 
 
+import java.util.Random;
+
 public class Rettangolo {
 
     // ATTRIBUTI
-    private double id;
+    private int id;
     private double altezza;
     private double larghezza;
 
 
     // COSTRUTTORI
     public Rettangolo(double altezza, double larghezza) {
-        this.id = Math.random();
+        Random random = new Random();
+        this.id = random.nextInt(0, 999);
         this.larghezza = larghezza;
         this.altezza = altezza;
 
