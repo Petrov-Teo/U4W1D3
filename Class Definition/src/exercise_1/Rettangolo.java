@@ -7,14 +7,11 @@ public class Rettangolo {
     private double id;
     private double altezza;
     private double larghezza;
-    private double perimetro;
-    private double area;
 
 
     // COSTRUTTORI
     public Rettangolo(double altezza, double larghezza) {
-        double id = Math.random();
-
+        this.id = Math.random();
         this.larghezza = larghezza;
         this.altezza = altezza;
 
@@ -45,6 +42,9 @@ public class Rettangolo {
         this.altezza = altezza;
     }
 
+
+    //SETMETODS
+
     public double getLarghezza() {
         return larghezza;
     }
@@ -53,14 +53,12 @@ public class Rettangolo {
         this.larghezza = larghezza;
     }
 
-
-    //SETMETODS
-
-    public double getPerimetro() {
-        return perimetro;
-    }
-
-    public double getArea() {
-        return area;
+    @Override
+    public String toString() {
+        return "Rettangolo{" +
+                "id=" + id +
+                ", altezza=" + altezza +
+                ", larghezza=" + larghezza +
+                '}';
     }
 }
